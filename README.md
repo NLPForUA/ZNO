@@ -48,7 +48,7 @@ Usage and License Notices: The dataset is CC BY NC 4.0 (allowing only non-commer
     "with_photo": false
 },
 ```
-#### Question with multiple correct answers:
+#### Question with multiple correct answers (each number from `answer_hheader` corresponds to letter from `answer_vheader`):
 ```json
 {
     "task_id": 48,
