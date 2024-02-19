@@ -78,3 +78,18 @@ Usage and License Notices: The dataset is CC BY NC 4.0 (allowing only non-commer
     "with_photo": false
 },
 ```
+
+### Citation
+
+Please cite the repo if you use the data or code in this repo.
+
+```
+@misc{zno-eval-2024,
+  author = {Mykyta Syromiatnikov},
+  title = {ZNO-Eval: Benchmarking reasoning capabilities of large language models in Ukrainian},
+  year = {2024},
+  publisher = {GitHub},
+  journal = {GitHub repository},
+  howpublished = {\url{https://github.com/NLPForUA/ZNO}},
+}
+```
