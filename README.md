@@ -11,7 +11,7 @@ This repository contains structured test tasks for multiple subjects from ZNO - 
 Usage and License Notices: The dataset is CC BY NC 4.0 (allowing only non-commercial use) and models trained using the dataset should not be used outside of research purposes. The code is Apache 2.0 licensed.
 
 ## Supported subjects:
-- Ukrainian language and literature
+- [Ukrainian language and literature](tests/ukrainian_raw.json) (49 tests with 2746 questions in total)
 - History of Ukraine
 - Mathematics
 - Geography
