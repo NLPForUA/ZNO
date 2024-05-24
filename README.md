@@ -24,6 +24,23 @@ Usage and License Notices: The dataset is CC BY NC 4.0 (allowing only non-commer
 - [] Add data files
 - [] Deliver baseline evaluation results (Zero-shot and Chain-of-Thought)
 
+## Evaluation results
+- Prompt: TBA
+- All evaluations leverage [UA-LLM](https://github.com/NLPForUA/UA-LLM) toolkit
+
+### Math (NMT - National multi-subject test)
+#### Zero-shot evaluation
+| Model | Score[^1] | ZNO Score (100-200)[^1] |
+| --- | :---: | :---: |
+| `gpt-3.5-turbo-0125` | 7.5 | 96.5 (failed) |
+| `mistral-large-latest` | 11.75 | 139.0 |
+| `claude-3-opus-20240229` | 17.25 | 149.25 |
+| `gpt-4o-2024-05-13` | 17.25 | 149.25 |
+| `gpt-4-turbo-2024-04-09` | 20.0 | 152.75 |
+| `gemini-1.5-pro-preview-0514` | **20.5** | **155.75** |
+
+[^1]: average of 4 tests
+
 ## Raw (parsed) data format:
 #### Question with one correct answer:
 ```json
