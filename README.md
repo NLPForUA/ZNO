@@ -14,7 +14,7 @@ Usage and License Notices: The dataset is CC BY NC 4.0 (allowing only non-commer
 - [Ukrainian language and literature](tests/ukrainian_raw.json) (49 tests with 2746 questions in total)
 - [History of Ukraine](tests/history_raw.json) (48 tests with 2640 questions in total)
 - [Mathematics](tests/math_raw.json) (9 tests with 230 questions in total)
-- Geography
+- [Geography](tests/geography_raw.json) (32 tests with 1788 questions in total)
 - English
 - German
 - French
