@@ -1,4 +1,4 @@
-# ZNO: Exam questions and answers in Ukrainian
+# ZNO-Eval: Exam questions and answers in Ukrainian
 
 [![Code License](https://img.shields.io/badge/Code%20License-Apache_2.0-green.svg)](https://github.com/NLPForUA/ZNO/blob/main/LICENSE)
 [![Data License](https://img.shields.io/badge/Data%20License-CC%20By%20NC%204.0-red.svg)](https://github.com/NLPForUA/ZNO/blob/main/DATA_LICENSE)
