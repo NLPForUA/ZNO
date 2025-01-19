@@ -4,11 +4,17 @@
 [![Data License](https://img.shields.io/badge/Data%20License-CC%20By%20NC%204.0-red.svg)](https://github.com/NLPForUA/ZNO/blob/main/DATA_LICENSE)
 ![GitHub last commit](https://img.shields.io/github/last-commit/NLPForUA/ZNO)
 ![GitHub Repo stars](https://img.shields.io/github/stars/NLPForUA/ZNO?style=social)
-![GitHub watchers](https://img.shields.io/github/watchers/NLPForUA/ZNO?style=svg)
+[![arXiv](https://img.shields.io/badge/arXiv-2501.06715-blue.svg?logo=arxiv&logoColor=white.svg)](https://arxiv.org/abs/2501.06715)
 
 This repository contains structured test tasks for multiple subjects from ZNO - Ukrainian External Independent Evaluation (Зовнішнє Незалежне Оцінювання) and NMT - National Multi-Subject Test (Національний Мультипредметний Тест).
 
 Usage and License Notices: The dataset is CC BY NC 4.0 (allowing only non-commercial use) and models trained using the dataset should not be used outside of research purposes. The code is Apache 2.0 licensed.
+
+## Updates:
+- 2025-01-*: Preprint `Empowering Smaller Models: Tuning LLaMA and Gemma with Chain-of-Thought for Ukrainian Exam Tasks` with PEFT Chain-of-Thought tuning results [TBA] 
+- 2025-01-19: Fixed question and answer options for Ukrainian language ZNO tasks (fixed 109 tasks missing hightlight of words or letters, using images as answer options or question descriptions)
+- 2025-01-12: Paper `ZNO-Eval: Benchmarking reasoning capabilities of large language models in Ukrainian` submitted to [arXiv](https://arxiv.org/abs/2501.06715)
+- 2024-09-26: Paper `ZNO-Eval: Benchmarking reasoning capabilities of large language models in Ukrainian` with baseline zero-shot presented at [X International conference "Informatics. Culture. Technology."](https://ics60.aait.od.ua/zbirnik2024.pdf)
 
 ## Supported subjects:
 - [Ukrainian language and literature](tests/ukrainian_raw.json) (49 tests with 2746 questions in total)
@@ -135,12 +141,15 @@ Usage and License Notices: The dataset is CC BY NC 4.0 (allowing only non-commer
 Please cite the repo if you use the data or code in this repo.
 
 ```
-@misc{zno-eval-2024,
-  author = {Mykyta Syromiatnikov},
-  title = {ZNO-Eval: Benchmarking reasoning capabilities of large language models in Ukrainian},
-  year = {2024},
-  publisher = {GitHub},
-  journal = {GitHub repository},
-  howpublished = {\url{https://github.com/NLPForUA/ZNO}},
+@article{zno-eval-2024,
+ title={ZNO-Eval: Benchmarking reasoning capabilities of large language models in Ukrainian},
+ url={https://arxiv.org/abs/2501.06715},
+ DOI={10.15276/ict.01.2024.27},
+ number={1},
+ journal={Informatics. Culture. Technology},
+ author={Syromiatnikov, M. V. and Ruvinskaya, V. M. and Troynina, A. S.},
+ year={2024},
+ month={Sep.}, 
+ pages={186-191}
 }
 ```
