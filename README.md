@@ -6,12 +6,13 @@
 ![GitHub Repo stars](https://img.shields.io/github/stars/NLPForUA/ZNO?style=social)
 [![arXiv](https://img.shields.io/badge/arXiv-2501.06715-blue.svg?logo=arxiv&logoColor=white.svg)](https://arxiv.org/abs/2501.06715)
 
-This repository contains structured test tasks for multiple subjects from ZNO - Ukrainian External Independent Evaluation (Зовнішнє Незалежне Оцінювання) and NMT - National Multi-Subject Test (Національний Мультипредметний Тест).
+This repository contains structured test tasks and model tuning scripts for multiple subjects from ZNO - Ukrainian External Independent Evaluation (Зовнішнє Незалежне Оцінювання) and NMT - National Multi-Subject Test (Національний Мультипредметний Тест).
 
 Usage and License Notices: The dataset is CC BY NC 4.0 (allowing only non-commercial use) and models trained using the dataset should not be used outside of research purposes. The code is Apache 2.0 licensed.
 
 ## Updates:
-- 2025-01-*: Preprint `Empowering Smaller Models: Tuning LLaMA and Gemma with Chain-of-Thought for Ukrainian Exam Tasks` with PEFT Chain-of-Thought tuning results [TBA] 
+- 2025-03-*: Preprint `Empowering Smaller Models: Tuning LLaMA and Gemma with Chain-of-Thought for Ukrainian Exam Tasks` with PEFT Chain-of-Thought tuning results [TBA later this week]
+- 2025-03-18: [PEFT Chain-of-Thought tuning code and notebooks](tuning/README.md), [Gemma models](https://huggingface.co/NLPForUA)
 - 2025-01-19: Fixed question and answer options for Ukrainian language ZNO tasks (fixed 109 tasks missing hightlight of words or letters, using images as answer options or question descriptions)
 - 2025-01-12: Paper `ZNO-Eval: Benchmarking reasoning capabilities of large language models in Ukrainian` submitted to [arXiv](https://arxiv.org/abs/2501.06715)
 - 2024-09-26: Paper `ZNO-Eval: Benchmarking reasoning capabilities of large language models in Ukrainian` with baseline zero-shot presented at [X International conference "Informatics. Culture. Technology."](https://ics60.aait.od.ua/zbirnik2024.pdf)

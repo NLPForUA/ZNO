@@ -1,0 +1,15 @@
+torch==2.5.1
+transformers==4.48.2
+peft==0.14.0
+wandb==0.19.5
+trl==0.12.0
+bitsandbytes==0.45.1
+accelerate==1.3.0
+huggingface_hub==0.28.1
+cut_cross_entropy==25.1.1
+hf_transfer==0.1.9
+protobuf==3.20.3
+sentencepiece==0.2.0
+unsloth==2025.1.8
+unsloth_zoo==2025.1.5
+xformers==0.0.29.post1
