@@ -12,7 +12,7 @@ Usage and License Notices: The dataset is CC BY NC 4.0 (allowing only non-commer
 
 ## Updates:
 - 2025-03-19: Preprint `Empowering Smaller Models: Tuning LLaMA and Gemma with Chain-of-Thought for Ukrainian Exam Tasks` with PEFT Chain-of-Thought tuning results submitted to [arXiv](https://arxiv.org/abs/2503.13988)
-- 2025-03-18: [PEFT Chain-of-Thought tuning code and notebooks](tuning/README.md), [Gemma models](https://huggingface.co/NLPForUA)
+- 2025-03-18: [PEFT Chain-of-Thought tuning code and notebooks](tuning/), [Gemma models](https://huggingface.co/NLPForUA)
 - 2025-01-19: Fixed question and answer options for Ukrainian language ZNO tasks (fixed 109 tasks missing hightlight of words or letters, using images as answer options or question descriptions)
 - 2025-01-12: Paper `ZNO-Eval: Benchmarking reasoning capabilities of large language models in Ukrainian` submitted to [arXiv](https://arxiv.org/abs/2501.06715)
 - 2024-09-26: Paper `ZNO-Eval: Benchmarking reasoning capabilities of large language models in Ukrainian` with baseline zero-shot presented at [X International conference "Informatics. Culture. Technology."](https://ics60.aait.od.ua/zbirnik2024.pdf)
@@ -28,25 +28,40 @@ Usage and License Notices: The dataset is CC BY NC 4.0 (allowing only non-commer
 - Spanish
 
 ## TODO:
-- [] Add data files
-- [] Deliver baseline evaluation results (Zero-shot and Chain-of-Thought)
+- [x] Add data files
+- [x] Deliver baseline evaluation results (Zero-shot and Chain-of-Thought)
 
 ## Evaluation results
 - Prompt: TBA
 - All evaluations leverage [UA-LLM](https://github.com/NLPForUA/UA-LLM) toolkit
 
-### Math (NMT - National multi-subject test)
-#### Zero-shot evaluation
-| Model | Score[^1] | ZNO Score (100-200)[^1] |
-| --- | :---: | :---: |
-| `gpt-3.5-turbo-0125` | 7.5 | 96.5 (failed) |
-| `mistral-large-latest` | 11.75 | 139.0 |
-| `claude-3-opus-20240229` | 17.25 | 149.25 |
-| `gpt-4o-2024-05-13` | 17.25 | 149.25 |
-| `gpt-4-turbo-2024-04-09` | 20.0 | 152.75 |
-| `gemini-1.5-pro-preview-0514` | **20.5** | **155.75** |
+## Learning to "reason" in Ukrainian
+#### `google/gemma-2-9b-it` after 4bit PEFT Chain-of-Thought tuning on step-by-step exam solutions ([NLPForUA/gemma-2-it-zno-cot-with-topic](https://huggingface.co/NLPForUA/gemma-2-it-zno-cot-with-topic)): 
+[read more](tuning/README.md)
+```
+<bos><start_of_turn>user
+Дайте розгорнуту відповідь на завдання, починаючи з ключового слова "Відповідь:" та використовуючи лише наведені нижче варіанти.
 
-[^1]: average of 4 tests
+Завдання: З’ясуйте, якими частинами мови є виділені слова в реченні (цифра позначає наступне слово).
+Сучасна людина, щоб бути (1)успішною, має вчитися (2)впродовж (3)усього життя, (4)опановуючи нові галузі знань.
+
+Варіанти відповіді:
+А – займенник
+Б – прикметник
+В – форма дієслова (дієприкметник)
+Г – форма дієслова (дієприслівник)
+Д – прийменник<end_of_turn>
+<start_of_turn>model
+Відповідь:
+ТЕМА: Морфологія. Частини мови
+Завдання перевіряє ваше вміння визначати частини мови.
+Необхідно бути дуже уважним, тому що частиномовна приналежність конкретного слова часто залежить від контексту. Проаналізуймо кожне із запропонованих слів.
+Слово успішною відповідає на питання яка? та вказує на ознаку предмета. Отже, це прикметник.
+Слово впродовж не відповідає на питання, а лише поєднує слова в реченні. Отже, це прийменник.
+Слово усього відповідає на питання що? і вказує на предмет, але не називає його. Отже, це займенник.
+А от слово опановуючи відповідає на питання що роблячи? та вказує на додаткову дію підмета. Отже, це особлива форма дієслова дієприслівник.
+Відповідь: 1–Б, 2–Д, 3–А, 4–Г.<end_of_turn>
+```
 
 ## Raw (parsed) data format:
 #### Question with one correct answer:
