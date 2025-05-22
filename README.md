@@ -11,8 +11,9 @@ This repository contains structured test tasks and model tuning scripts for mult
 Usage and License Notices: The dataset is CC BY NC 4.0 (allowing only non-commercial use) and models trained using the dataset should not be used outside of research purposes. The code is Apache 2.0 licensed.
 
 ## Updates:
+- 2025-05-18: The exam dataset `dumy-zno-ukrainian-math-history-geo-r1-o1`, featuring questions, topics, answers, graded predictions, and reasoning from DeepSeek R1 and OpenAI o1, has been [published on Hugging Face](https://huggingface.co/datasets/NLPForUA/dumy-zno-ukrainian-math-history-geo-r1-o1).
 - 2025-03-19: Preprint `Empowering Smaller Models: Tuning LLaMA and Gemma with Chain-of-Thought for Ukrainian Exam Tasks` with PEFT Chain-of-Thought tuning results submitted to [arXiv](https://arxiv.org/abs/2503.13988)
-- 2025-03-18: [PEFT Chain-of-Thought tuning code and notebooks](tuning/), [Gemma models](https://huggingface.co/NLPForUA)
+- 2025-03-18: [PEFT Chain-of-Thought tuning code and notebooks](tuning/), [Gemma and LLaMA models](https://huggingface.co/NLPForUA)
 - 2025-01-19: Fixed question and answer options for Ukrainian language ZNO tasks (fixed 109 tasks missing hightlight of words or letters, using images as answer options or question descriptions)
 - 2025-01-12: Paper `ZNO-Eval: Benchmarking reasoning capabilities of large language models in Ukrainian` submitted to [arXiv](https://arxiv.org/abs/2501.06715)
 - 2024-09-26: Paper `ZNO-Eval: Benchmarking reasoning capabilities of large language models in Ukrainian` with baseline zero-shot presented at [X International conference "Informatics. Culture. Technology."](https://ics60.aait.od.ua/zbirnik2024.pdf)
