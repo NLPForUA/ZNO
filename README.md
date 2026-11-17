@@ -6,6 +6,11 @@
 ![GitHub Repo stars](https://img.shields.io/github/stars/NLPForUA/ZNO?style=social)
 [![arXiv](https://img.shields.io/badge/arXiv-2501.06715-blue.svg?logo=arxiv&logoColor=white.svg)](https://arxiv.org/abs/2501.06715)
 
+
+> [!NOTE]
+> **Updated dataset available on Hugging Face.** The data in this repository represents an earlier release of ZNO-Eval and is retained for reference and reproducibility. [huggingface.co/datasets/NLPForUA/zno-eval](https://huggingface.co/datasets/NLPForUA/zno-eval) includes expanded metadata, documented data corrections, quality annotations, and a more accessible dataset format.
+
+
 This repository contains structured test tasks and model tuning scripts for multiple subjects from ZNO - Ukrainian External Independent Evaluation (Зовнішнє Незалежне Оцінювання) and NMT - National Multi-Subject Test (Національний Мультипредметний Тест).
 
 Usage and License Notices: The dataset is CC BY NC 4.0 (allowing only non-commercial use) and models trained using the dataset should not be used outside of research purposes. The code is Apache 2.0 licensed.
